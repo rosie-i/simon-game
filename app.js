@@ -74,6 +74,18 @@ checkAnswer = (numberOfUserClicks) => {
         }
     } else {
         console.log("wrong" + gamePattern[numberOfUserClicks] + userClickedPattern[numberOfUserClicks]);
+        // Tell user they were wrong
+        $("h1").html("Wrong - game over! Press any key to restart.");
+        userClickedPattern = [];
+        gamePattern = [];
+        level = 0;
+        gameStarted = false;
+        playSound('wrong');
+        $("body").css("background-color", "rgb(228, 160, 36)");
+        setTimeout(function(){
+            $("body").css("background-color", "rgb(34, 52, 92)");
+        }, 150);
+        // Reset gamepattern, userclickpattern, level 0, game started false, set header to Press Any Key to start
 
     }
 

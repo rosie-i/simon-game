@@ -8,12 +8,15 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+button:active {
+    opacity: 0.7;
+    transform: translateY(4px);
 
-.container {
-    display: block;
-    margin: auto;
 }
 
+button:focus { 
+    outline-color: rgb(51, 36, 23) 
+}
 
 .squareGeneral {
     border: 10px solid black;
@@ -21,6 +24,8 @@ body {
     width: 200px;
     height: 200px;
     margin: 10px;
+    box-shadow: 0 5px rgb(46, 46, 46);
+
 }
 
 .squarePink {

@@ -1,0 +1,41 @@
+body {
+    background-color:rgb(34, 52, 92);
+    text-align: center;
+}
+
+.startTitle {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+    display: block;
+    margin: auto;
+}
+
+
+.squareGeneral {
+    border: 10px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.squarePink {
+ background-color: #D84797;
+}
+
+.squareYellow {
+    background-color: #E8E288;
+
+}
+
+.squareGreen {
+    background-color: #8CB369;
+}
+
+.squareBlue {
+    background-color: #3ABEFF;
+}
